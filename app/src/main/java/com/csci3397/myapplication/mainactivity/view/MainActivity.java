@@ -1,8 +1,10 @@
-package com.csci3397.myapplication;
+package com.csci3397.myapplication.mainactivity.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.csci3397.myapplication.R;
 
 public class MainActivity extends AppCompatActivity {
 

@@ -1,18 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@drawable/background1"
+    android:paddingTop="?attr/actionBarSize">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+
+
+
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="Progress:"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progress"
+        android:layout_centerHorizontal="true"
+        android:progress="25"
+        android:progressBackgroundTint="@color/white"
+        android:progressTint="#7F86C3" />
+
+    <EditText
+        android:id="@+id/calorieTracker"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:drawableRight="@android:drawable/ic_lock_lock"
+        android:drawableTint="@color/black"
+        android:fontFamily="monospace"
+        android:text="342/2000 calories" />
+
+    <TextView
+        android:id="@+id/infoBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calorieTracker"
+        android:layout_margin="70dp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="What Would You Like To Check?"
+        android:textColor="@color/black"
+        android:textSize="35dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/todayBtn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/infoBanner"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="monospace"
+        android:text="Today" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/recsBtn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/todayBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-8dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="monospace"
+        android:text="Reccomendations" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/inputCalsBtn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/recsBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="monospace"
+        android:text="Input Calories" />
+
+
+</RelativeLayout>
