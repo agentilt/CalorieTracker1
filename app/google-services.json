@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "727759943080",
+    "project_id": "calorietracker-edeca",
+    "storage_bucket": "calorietracker-edeca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727759943080:android:79244fc7d1ca2204d5599d",
+        "android_client_info": {
+          "package_name": "com.csci3397.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "727759943080-tep354i6krgmns44v1m0lqh77rv95tfu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYNru2E5Syj-HPm5lmLk1L58RgLJweyaI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "727759943080-tep354i6krgmns44v1m0lqh77rv95tfu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
