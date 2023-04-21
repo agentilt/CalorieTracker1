@@ -12,11 +12,17 @@
         android:theme="@style/Theme.CalorieTracker"
         tools:targetApi="31">
         <activity
+            android:name=".mainactivity.view.Revolve"
+            android:exported="false" />
+        <activity
+            android:name=".mainactivity.view.Recommendations"
+            android:exported="false" />
+        <activity
             android:name=".mainactivity.view.Today"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".mainactivity.view.InputCalories"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".mainactivity.view.MainActivity"
             android:exported="true">

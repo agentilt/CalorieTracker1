@@ -47,6 +47,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        recs.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(MainActivity.this, Revolve.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
