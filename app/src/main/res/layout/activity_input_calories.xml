@@ -7,17 +7,18 @@
     tools:context=".mainactivity.view.InputCalories"
     android:background="@drawable/background1">
 
+
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recylerView1"
-        android:layout_width="180dp"
-        android:layout_height="wrap_content"
+        android:id="@+id/recycler_view"
+        android:layout_width="366dp"
+        android:layout_height="154dp"
         android:layout_below="@+id/calorieBanner"
-        android:layout_margin="10dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
-        />
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2" />
 
     <TextView
         android:id="@+id/calorieBanner"
@@ -31,7 +32,6 @@
         android:text="Are You Ready To Track Your Calories?"/>
 
 
-
     <com.google.android.material.button.MaterialButton
         android:id="@+id/confirm"
         android:layout_width="wrap_content"
@@ -43,11 +43,13 @@
         android:fontFamily="monospace"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
+
+        android:id="@+id/bottomnav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/confirm"
         android:layout_marginTop="110dp"
-        app:menu="@menu/bottom_nav_menu"/>
+        app:menu="@menu/bottom_nav_menu" />
 
     <EditText
         android:id="@+id/CalorieCount"

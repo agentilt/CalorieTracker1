@@ -1,9 +1,13 @@
 package com.csci3397.myapplication.mainactivity.view;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -12,6 +16,7 @@ import android.widget.TextView;
 
 import com.csci3397.myapplication.R;
 import com.csci3397.myapplication.mainactivity.model.User;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
     User user = new User();
@@ -33,6 +38,34 @@ public class MainActivity extends AppCompatActivity {
         calorieTracker = findViewById(R.id.calorieTracker);
         calorieTracker.setText(user.getCaloriesConsumed() + "/" + user.getCalorieGoal() + " calories");
 
+
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomnav);
+
+        // Set the listener for when an item is selected
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.backArrow:
+                        // Handle back arrow item press
+
+                        return true;
+                    case R.id.profile:
+                        // Handle profile item press
+                        // Start the Profile activity
+                        Intent profileIntent = new Intent(MainActivity.this, Profile.class);
+                        startActivity(profileIntent);
+                        return true;
+                    case R.id.history:
+                        // Handle history item press
+                        // Start the History activity
+                        Intent historyIntent = new Intent(MainActivity.this, History.class);
+                        startActivity(historyIntent);
+                        return true;
+                }
+                return false;
+            }
+        });
         input.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
@@ -74,6 +107,8 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+
+
 }
 
 
