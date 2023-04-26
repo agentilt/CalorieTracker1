@@ -12,9 +12,8 @@
         android:id="@+id/bottomnav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/inputCalsBtn"
-        android:layout_marginTop="89dp"
-
+        android:layout_below="@id/reccomendationsBtn"
+        android:layout_marginTop="51dp"
         app:menu="@menu/bottom_nav_menu" />
 
 
@@ -55,12 +54,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/calorieTracker"
-        android:layout_margin="70dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="70dp"
         android:fontFamily="monospace"
         android:gravity="center"
-        android:text="What Would You Like To Check?"
+        android:text="Hello Eren! What Would You Like To Check?"
         android:textColor="@color/black"
-        android:textSize="35dp" />
+        android:textSize="30dp" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/todayBtn"
@@ -97,7 +99,16 @@
         android:backgroundTint="@color/black"
         android:fontFamily="monospace"
         android:text="Input Calories" />
-
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/reccomendationsBtn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/inputCalsBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="monospace"
+        android:text="Reccomendations" />
 
 
 </RelativeLayout>
