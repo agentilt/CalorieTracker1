@@ -33,7 +33,7 @@ public class InputCalories extends AppCompatActivity {
         foodList.add(new foodItems("Food 2", 200));
         foodList.add(new foodItems("Food 3", 300));
 
-        RecyclerView foodRecyclerView = findViewById(R.id.recycler_view);
+        RecyclerView foodRecyclerView = findViewById(R.id.recylcler_view);
         foodRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         FoodAdapter foodAdapter = new FoodAdapter(foodList);
         foodRecyclerView.setAdapter(foodAdapter);

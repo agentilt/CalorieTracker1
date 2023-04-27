@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,18 +11,22 @@
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="20dp"
         android:text="Recommendations"
-        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="monospace"
+        android:textColor="@color/black"
+        android:textSize="22dp"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="121dp" />
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="402dp"
-        android:layout_height="509dp"
+        android:layout_width="wrap_content"
+        android:layout_height="560dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="70dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title">
 
@@ -35,9 +39,10 @@
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
+                android:fontFamily="monospace"
                 android:text="Choose a variety of foods: Since there are different stands offering different types of food, it's important to choose a variety of foods to ensure you're getting all the necessary nutrients. Aim to include some fruits and vegetables, lean proteins, whole grains, and healthy fats in your meals.  Start with a salad: The salad stand is a great place to start your meal, as it offers a variety of vegetables and fruits that can help fill you up and provide important nutrients. Be careful with dressings, as they can be high in calories and fat. Consider using olive oil and vinegar as a lighter alternative.  Limit pizza and burgers: While it's okay to enjoy pizza and burgers occasionally, they tend to be high in calories, fat, and sodium. Consider sharing a slice of pizza with a friend, or choosing a smaller burger and adding lots of veggies on top.  Take advantage of the omelet section: If you're at the dining hall during breakfast hours, the omelet section is a great option. Eggs are a good source of protein and can help keep you full throughout the morning. Consider adding vegetables and skipping the cheese to keep the calories and fat in check.  Enjoy dessert in moderation: Desserts are often high in sugar and calories, so it's important to enjoy them in moderation. Consider sharing a dessert with a friend, or choosing a smaller portion size.  Choose healthier options at the comfort food stand: The comfort food stand offers a wide variety of foods, some of which can be high in calories and fat. Look for grilled or baked options, such as salmon or chicken, and choose brown rice or whole wheat pasta instead of white rice or regular pasta. Be mindful of portion sizes and use the &quot;plate method&quot; to ensure you're getting a balanced meal. This means filling half your plate with vegetables, a quarter with lean protein, and a quarter with whole grains.  Remember, it's important to listen to your body's hunger and fullness cues and to eat until you're satisfied, not stuffed. If you have any specific dietary needs or concerns, such as food allergies or intolerances, consider speaking with a registered dietitian for personalized advice.       "
-                android:textSize="24sp" />
+                android:textColor="@color/black"
+                android:textSize="20dp" />
         </LinearLayout>
     </ScrollView>
 
@@ -45,10 +50,9 @@
         android:id="@+id/bottomnav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-        android:layout_marginTop="31dp"
+        android:layout_marginTop="650dp"
         app:layout_constraintTop_toBottomOf="@+id/scrollView2"
         app:menu="@menu/bottom_nav_menu"
         tools:layout_editor_absoluteX="0dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
