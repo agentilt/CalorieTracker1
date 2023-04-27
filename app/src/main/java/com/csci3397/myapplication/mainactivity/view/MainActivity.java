@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         Button todaybtn = findViewById(R.id.todayBtn);
         Button recs = findViewById(R.id.recsBtn);
         Button input = findViewById(R.id.inputCalsBtn);
+        Button recomendation = findViewById(R.id.reccomendationsBtn);
         progressBar = findViewById(R.id.progressBar);
         progressBar.setMax(user.getCalorieGoal());
         progressBar.setProgress(user.getCaloriesConsumed());
@@ -84,6 +85,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view){
                 Intent intent = new Intent(MainActivity.this, Revolve.class);
+                startActivity(intent);
+            }
+        });
+        recomendation.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(MainActivity.this, Recommendations.class);
                 startActivity(intent);
             }
         });
