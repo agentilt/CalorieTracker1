@@ -29,6 +29,28 @@ public class Food extends AppCompatActivity {
         this.description = description;
         deleted = null;
     }
+    public static Food getFoodForID(int passedFoodID)
+    {
+        for (Food food : FoodArrayList)
+        {
+            if(food.getId() == passedFoodID)
+                return food;
+        }
+        return null;
+    }
+
+    public static ArrayList<Food> nonDeletedFoods()
+    {
+        ArrayList<Food> nonDeleted = new ArrayList<>();
+        for(Food food : FoodArrayList)
+        {
+            if(food.getDeleted() == null)
+                nonDeleted.add(food);
+        }
+
+        return nonDeleted;
+    }
+
     public int getId() {
         return id;
     }
