@@ -27,7 +27,7 @@
        android:ems="10"
        android:layout_below="@+id/calorieBanner"
        android:layout_marginTop="60dp"
-       android:text="Number of Calories"
+       android:text="Number of Calories:"
        android:fontFamily="monospace"
        android:gravity="center"
        android:textSize="20dp"/>
@@ -40,7 +40,7 @@
         android:ems="10"
         android:layout_below="@+id/CalorieCount"
         android:layout_marginTop="30dp"
-        android:text="Name of Food"
+        android:text="Name of Food:"
         android:fontFamily="monospace"
         android:gravity="center"
         android:textSize="20dp"/>
