@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">CalorieTracker</string>
+    <string-array name="food_list">
+        <item>mooncake</item>
+        <item>Mac N Cheese</item>
+        <item>Shabu-shabu</item>
+        <item>Miso</item>
+        <item>Wagashir</item>
+        <item>Biryani</item>
+        <item>Hamburger</item>
+        <item>Salmon</item>
+        <item>Chicken Wing</item>
+        <item>Ramen</item>
+
+        <!-- Add more food names here -->
+    </string-array>
 </resources>

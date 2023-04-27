@@ -23,5 +23,15 @@ public class foodItems {
         return date;
     }
 
+    public void setDate(Date date) {
+        this.date = date;
+    }
 
+    public void setCalories(int calories) {
+        this.calories = calories;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }

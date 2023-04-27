@@ -9,13 +9,12 @@
     android:paddingTop="?attr/actionBarSize">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/reccomendationsBtn"
-        android:layout_marginTop="51dp"
-        app:menu="@menu/bottom_nav_menu"
-
-        />
+        android:layout_marginTop="30dp"
+        app:menu="@menu/bottom_nav_menu" />
 
 
     <TextView
