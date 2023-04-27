@@ -7,17 +7,6 @@
     tools:context=".mainactivity.view.InputCalories"
     android:background="@drawable/background1">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recylerView1"
-        android:layout_width="180dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/calorieBanner"
-        android:layout_margin="10dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
-        />
 
     <TextView
         android:id="@+id/calorieBanner"
@@ -30,6 +19,31 @@
         android:textColor="@color/black"
         android:text="Are You Ready To Track Your Calories?"/>
 
+   <EditText
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/CalorieCount"
+       android:layout_centerHorizontal="true"
+       android:ems="10"
+       android:layout_below="@+id/calorieBanner"
+       android:layout_marginTop="60dp"
+       android:text="Number of Calories"
+       android:fontFamily="monospace"
+       android:gravity="center"
+       android:textSize="20dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/foodNameCount"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:layout_below="@+id/CalorieCount"
+        android:layout_marginTop="30dp"
+        android:text="Name of Food"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:textSize="20dp"/>
 
 
     <com.google.android.material.button.MaterialButton
@@ -49,13 +63,6 @@
         android:layout_marginTop="110dp"
         app:menu="@menu/bottom_nav_menu"/>
 
-    <EditText
-        android:id="@+id/CalorieCount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
 
 
 </RelativeLayout>
